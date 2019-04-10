@@ -9,6 +9,7 @@ cache:
     - node_modules
 install:
   - npm install
+  - npm install-dev
 script:
   - npm test
   - npm coverage
