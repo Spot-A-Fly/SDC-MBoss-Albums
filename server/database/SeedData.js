@@ -320,6 +320,11 @@ class RandomDataGenerator {
       });
       promiseArr.push(newArtist.save());
     }
+    const newArtist = Artist({
+      name: 'The Ascending Critics',
+      albums: allArtistAlbums[1],
+    });
+    promiseArr.push(newArtist.save());
     return promiseArr;
   }
 }
