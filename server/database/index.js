@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
-mongoose.connect('mongodb://localhost/spoticlone');
+mongoose.connect('mongodb://database/spoticlone');
 const db = mongoose.connection;
 db.on('error', () => console.error('failed to load DB'));
 db.once('open', () => console.log('db connected'));
