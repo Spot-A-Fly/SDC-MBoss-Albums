@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const fetch = require('node-fetch');
 const { Album, Artist, db } = require('./index.js');
 
+
 class RandomDataGenerator {
   constructor() {
     this.prefixes = [
