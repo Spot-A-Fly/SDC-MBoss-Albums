@@ -4,8 +4,8 @@ mongoose.connect('mongodb://localhost/spoticlone', { useNewUrlParser: true, useU
 
 const dbNew = mongoose.connection;
 
-dbNew.on('error', () => console.error('Error loading Albums database'));
-dbNew.once('open', () => console.log('Albums database connected'));
+dbNew.on('error', () => console.error('Error loading Spoticlone database'));
+dbNew.once('open', () => console.log('Spoticlone database connected'));
 
 const albumSchema = new mongoose.Schema({
   bandName: String,

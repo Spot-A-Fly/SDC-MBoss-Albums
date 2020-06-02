@@ -4,6 +4,13 @@ const db = require('../newDatabasde/mongoDatabase.js');
 
 const app = express();
 
+// Middleware
+app.get('/data/albumsbyartist/:artistId', (req, res) => {
+
+});
+
+
+// Server set up
 const PORT = process.env.PORT || 3242;
 
 app.listen(PORT, (err) => {
